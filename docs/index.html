@@ -1,1 +1,43 @@
-1
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Valor do Dólar Hoje">
+    <title>Dólar Hoje</title>
+    <link rel="icon" type="image/png" href="/img/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/img/favicon.svg" />
+    <link rel="shortcut icon" href="/img/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png" />
+    <meta name="keywords" content="dolar hoje,cotação dolar hoje,preço do dolar hoje,bitcoin dolar hoje,dolar hoje conversor,dolar hoje real,dólar hoje gráfico,dolar hoje tempo real,dolar hoje uol,dolar hoje noticias,dolar hoje valor,dolar hoje em real,dolar hoje agora,dolar hoje ao vivo,dolar hoje aliexpress,dolar hoje avenue,dolar hoje aumentou,dolar hoje api,dolar hoje app,dolar hoje alta,alta do dolar hoje,ada dolar hoje,aumento do dolar hoje,ada cardano dolar hoje,abertura do dolar hoje,alta do dolar hoje motivo,a cotacao do dolar hoje,a quanto esta o dolar hoje,a quanto fechou o dolar hoje,dolar aud hoje,dólar haddad,hoje dólar hoje,dólar h,hoje dólar,dólar hoje hoje,dólar hoje agora,dólar dólar hoje,=dolar hoje,dólar hoje câmbio,dolar hoje brasil,dolar hoje banco central,dolar hoje bacen,dolar hoje brasil real,dolar hoje brl,dolar hoje b3,dolar hoje binance,dolar hoje bitcoin,dolar hoje bolsa,dolar hoje bing,bitcoin hoje em dolar,bolsa e dolar hoje,banco central dolar hoje">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Dólar Hoje <span id="date">...</span></h1>
+        <div class="price-card">
+            <p>$1 vale <span id="price">...</span></p>
+        </div>
+        <div class="converter">
+            <h2>Conversor</h2>
+            <div class="input-row">
+                <div class="input-group">
+                    <label for="usd-input">USD (Dólar)</label>
+                    <input type="number" id="usd-input" placeholder="0.00" step="0.01" min="0">
+                </div>
+                <div class="input-group">
+                    <label for="brl-input">BRL (Real)</label>
+                    <input type="number" id="brl-input" placeholder="0.00" step="0.01" min="0">
+                </div>
+            </div>
+        </div>
+        <div class="chart-card">
+            <h2>Histórico (7 dias)</h2>
+            <canvas id="priceChart"></canvas>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
