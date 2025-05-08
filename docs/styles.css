@@ -46,7 +46,7 @@ h1 {
 
 .price-card #price {
     font-weight: 700;
-    text-shadow: 0 0 8px rgba(173, 216, 230, 0.7);
+    text-shadow: 0 0 8px rgba(173, 216, 230, 0.5);
 }
 
 .converter {
@@ -131,14 +131,15 @@ canvas {
 @media (max-width: 480px) {
     .container {
         padding: 20px;
+        margin: 20px;
     }
 
     h1 {
-        font-size: 28px;
+        font-size: 24px;
     }
 
     .price-card p {
-        font-size: 20px;
+        font-size: 28px;
     }
 
     .converter h2, .chart-card h2 {
@@ -152,5 +153,8 @@ canvas {
 
     .input-group {
         min-width: 100%;
+    }
+    .input-group input {
+        width: 93%;
     }
 }
